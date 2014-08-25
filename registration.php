@@ -67,10 +67,19 @@
 		</style>
 	</head>
 	<body>
+	<?php 
+include ('db.php');
+ $email = "email@phpguru.com.ua";
+ $login = "sasha";
+ $DOB = "2001-03-06";
+ $pass = "12345";
+ $sql = 'INSERT INTO users (email, login, DOB, pass)
+ VALUES("'.$email.'", "'.$login.'", "'.$DOB.'", "'.$pass.'")';
+?>
 		<h1 class="pc">Регистрация</h1>
 		<p align="center"><a href="index.html">Щёлкните здесь для перехода на vk.loc</a></p>
 			<table class="table1">
-				<form>
+				<form method="POST">
 					<tr>
 						<td>Введите email:</td>
 						<td><input type = "text" placeholder = "Поле для ввода email"  size = "40" name="email" required></td>
@@ -78,6 +87,10 @@
 					<tr>
 						<td>Введите логин:</td>
 						<td><input type = "text" maxlength = "12" placeholder = "Поле для ввода логина" size = "40" name="login" required></td>
+					</tr>
+					<tr>
+						<td>Введите дату рождения:</td>
+						<td><input type = "text" placeholder = "Поле для ввода даты рождения"  size = "40" name="email" required></td>
 					</tr>
 					<tr>
 						<td>Введите пароль:</td>

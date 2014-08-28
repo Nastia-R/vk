@@ -25,7 +25,7 @@
 			<body>
 			<hr />
 			<p class="justcolor">Yes, you're on my first web site! =P<br /></p>
-			<p class="fig"><img src="images\pion.jpg" width="320" height="280" alt="This's my favourite flower =)"></p>
+			<p class="fig"><a href="/template/registration.php"><img src="\template\images\pion.jpg" width="320" height="280" alt="This's my favourite flower =)"></a></p>
 			<p class="justcolor">And now I follow the principle of: <br /></p>
 			<p class="colorlight">To reach the goal, we should to go.</p>
 			<p class="justcolor"><i>Honore de Balzac</i></p>

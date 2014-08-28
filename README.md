@@ -1,4 +1,2 @@
-vk
-==
-
-Social network
+Class #2
+Radionova Anastasia

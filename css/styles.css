@@ -1,0 +1,60 @@
+.pc
+{
+	margin: auto;
+	color: #8F065A;
+	text-align: center;
+}
+body 
+{
+	background-image: url(images/77.jpg);
+	background-color: #C7B39B;
+	height: 100%;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif
+	}
+.table1
+{
+	background-image: url(images/1.jpg);
+	border-radius: 15px;
+	 width: 400px;
+	 margin: 0 auto; 
+}
+.button 
+{
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	padding: .8em 1em calc(.8em + 3px);
+	border-radius: 3px;
+	background: #B85D79;
+	box-shadow: 0 -3px #9F3857 inset;
+	border-radius: 10px;
+	transition: 0.2s;
+	margin: 0px auto;
+	display: block;
+	width: 150px;
+} 
+.button:hover 
+{ 
+	background: #9F3857; 
+}
+.button:active 
+{
+	background: #FE8498;
+	box-shadow: 1 3px #9F3857 inset;
+}
+.pic1
+{
+	position: absolute;
+	bottom: 0;
+	float:center; 
+	text-align:center; 
+	width:100%; 
+}
+img.big
+{
+	cursor: pointer; max-width: 160px; max-height: 180px
+}
+img.big:hover 
+{
+	max-width: none;
+}

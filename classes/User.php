@@ -29,7 +29,7 @@ class User{
 		
 		if ($exist )
 		{
-			$this->result = 'This email already exists.Please, enter another email.';
+			$this->result = 'This email already exists. Please, enter another email.';
 		}
 		else
 		{
@@ -41,7 +41,7 @@ class User{
 		
 			try{
 				$insert->execute();
-				$this->result = 'Hello ' . $data['login'] . ' your user id is:'.$this->db->lastInsertId();
+				$this->result = 'Hello, ' . $data['login'] . '! Your user id is:'.$this->db->lastInsertId();
 			} catch(Exception $e) {
 				$this->result = $e->getMessage();
 			}

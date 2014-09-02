@@ -47,5 +47,11 @@ class User{
 			}
 		}
 	}
+	
+	public function auth ()
+	{
+		
+		
+	}
 }
 ?>

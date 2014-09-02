@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if (empty $_SESSION['user-id'])
+		{
+		
+		}
+		
+?>
 <!DOCTYPE html>
 <html>
 	<head>

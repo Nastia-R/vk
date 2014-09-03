@@ -6,6 +6,7 @@ class User{
 	
 	public $db;
 	public $result;
+	public $result2;
 
 	public function __construct()
 	{
@@ -30,6 +31,7 @@ class User{
 		if ($exist )
 		{
 			$this->result = 'This email already exists. Please, enter another email.';
+			return false;
 		}
 		else
 		{
@@ -42,16 +44,23 @@ class User{
 			try{
 				$insert->execute();
 				$this->result = 'Hello, ' . $data['login'] . '! Your user id is:'.$this->db->lastInsertId();
-			} catch(Exception $e) {
+				return true;
+			} catch(exception $e) {
 				$this->result = $e->getMessage();
 			}
 		}
+		return false;
 	}
 	
-	public function auth ()
+	public function get_user_id($post)
 	{
-		
-		
+		$checking = 'select id from users where email = \''.$_POST['email'] .'\' AND pass = \'' . $_POST['pass'] . '\'' ;
+		foreach ($this->db->query($checking) as $row) 
+		{
+			return $row['id'];
+			
+		}
+		return false;
 	}
 }
 ?>

@@ -10,7 +10,6 @@
 			Email:<input name = "email" type = "text" />
 			Password:<input name = "pass" type = "password" />
 			<input type = "submit" value = "Login"/>
-			
 		</form>
 <?php include('E:/xampp/htdocs/vk/template/footer.php'); ?>
 	</body>

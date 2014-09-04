@@ -9,3 +9,4 @@ else
 {
 	include('E:/xampp/htdocs/vk/template/registration.php');
 }
+?>
